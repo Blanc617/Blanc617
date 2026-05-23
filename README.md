@@ -40,13 +40,20 @@
 
 ## 🛠️ Tech Stack
 
-**AI / Agent**
+**AI**
 
-![LLM](https://img.shields.io/badge/LLM-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Transformer](https://img.shields.io/badge/Transformer-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Embeddings](https://img.shields.io/badge/Embeddings-412991?style=for-the-badge&logo=openai&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude_API-CC785C?style=for-the-badge&logo=anthropic&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+
+**Agent / RAG**
+
+![RAG](https://img.shields.io/badge/RAG-0B7285?style=for-the-badge&logo=googlescholar&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude_API-CC785C?style=for-the-badge&logo=anthropic&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 **Frontend**
 
@@ -76,8 +83,21 @@
 
 ## Projects
 
+### 📝 [CoverFit](https://github.com/Afraid-Not/cover-letter) — 채용공고 맞춤형 AI 자기소개서 작성 플랫폼
+![](https://img.shields.io/badge/AI-412991?style=flat) ![](https://img.shields.io/badge/2026.04_~_2026.05-aaa?style=flat) ![](https://img.shields.io/badge/3인_팀-aaa?style=flat) [![GitHub](https://img.shields.io/badge/View_Repo-0D1117?style=flat&logo=github&logoColor=white)](https://github.com/Afraid-Not/cover-letter)
+
+> 합격 자소서 데이터셋을 RAG로 검색하고, 9명의 AI 평가관이 실시간으로 서류 통과 가능성을 평가하는 자기소개서 작성 SaaS
+
+- 합격 자소서 39건을 **Parent-Child Chunking**으로 임베딩하고 Supabase pgvector 검색을 적용해 질문·채용공고와 유사한 사례를 생성 프롬프트에 주입
+- 채용공고 텍스트/스크린샷 분석과 OpenAI + Tavily + DART 기반 **회사 정보 조사**로 직무·기업 맞춤 자소서 생성
+- HR·현업·채용 리더 관점의 **9명 LLM-as-a-Judge 평가관**을 병렬 실행하고 **SSE 스트리밍**으로 통과 확률과 피드백을 실시간 제공
+- 이력서 업로드·파싱, 글자수 자동 준수, 피드백 기반 재생성, 프로젝트 버전 관리까지 자소서 작성 흐름 구현
+
+**Stack:** `FastAPI` `Python` `Next.js` `React` `TypeScript` `Supabase pgvector` `OpenAI API` `Claude API` `Toss Payments`
+
+---
 ### 🏪 [BOSS](https://github.com/Neurack4/Boss-2) — AI 기반 소상공인 업무 자동화 플랫폼
-![](https://img.shields.io/badge/2026.04_~_2026.05-aaa?style=flat) ![](https://img.shields.io/badge/3인_팀-aaa?style=flat) ![](https://img.shields.io/badge/풀스택_/_AI·데이터-aaa?style=flat) [![GitHub](https://img.shields.io/badge/View_Repo-0D1117?style=flat&logo=github&logoColor=white)](https://github.com/Neurack4/Boss-2)
+![](https://img.shields.io/badge/AI-412991?style=flat) ![](https://img.shields.io/badge/2026.04_~_2026.05-aaa?style=flat) ![](https://img.shields.io/badge/3인_팀-aaa?style=flat) [![GitHub](https://img.shields.io/badge/View_Repo-0D1117?style=flat&logo=github&logoColor=white)](https://github.com/Neurack4/Boss-2)
 
 > 소상공인의 채용·마케팅·매출·문서 업무를 AI 에이전트가 대화형으로 처리하는 통합 플랫폼
 
@@ -90,7 +110,7 @@
 ---
 
 ### ⚽ [Kick Data](https://github.com/Blanc617/kleague_data) — K리그 데이터 분석 플랫폼
-![](https://img.shields.io/badge/2026.03_~_2026.04-aaa?style=flat) ![](https://img.shields.io/badge/개인_프로젝트-aaa?style=flat) ![](https://img.shields.io/badge/풀스택_/_AI·데이터-aaa?style=flat) [![GitHub](https://img.shields.io/badge/View_Repo-0D1117?style=flat&logo=github&logoColor=white)](https://github.com/Blanc617/kleague_data)
+![](https://img.shields.io/badge/AI-412991?style=flat) ![](https://img.shields.io/badge/2026.03_~_2026.04-aaa?style=flat) ![](https://img.shields.io/badge/개인_프로젝트-aaa?style=flat) [![GitHub](https://img.shields.io/badge/View_Repo-0D1117?style=flat&logo=github&logoColor=white)](https://github.com/Blanc617/kleague_data)
 
 > K리그 공식·FotMob·Transfermarkt 등 5개 소스에서 실시간 데이터를 수집·분석하는 RAG 기반 플랫폼
 
@@ -104,7 +124,7 @@
 ---
 
 ### 🎯 [NextEnter](https://github.com/Blanc617/NextEnter) — AI 기반 구인구직 플랫폼
-![](https://img.shields.io/badge/2026.01_~_2026.02-aaa?style=flat) ![](https://img.shields.io/badge/5인_팀-aaa?style=flat) ![](https://img.shields.io/badge/팀장_/_풀스택_개발-aaa?style=flat) [![GitHub](https://img.shields.io/badge/View_Repo-0D1117?style=flat&logo=github&logoColor=white)](https://github.com/Blanc617/NextEnter)
+![](https://img.shields.io/badge/AI-412991?style=flat) ![](https://img.shields.io/badge/2026.01_~_2026.02-aaa?style=flat) ![](https://img.shields.io/badge/5인_팀-aaa?style=flat) ![](https://img.shields.io/badge/팀장-6B7280?style=flat) [![GitHub](https://img.shields.io/badge/View_Repo-0D1117?style=flat&logo=github&logoColor=white)](https://github.com/Blanc617/NextEnter)
 
 > AI가 이력서를 분석하고 면접을 진행하는 채용 플랫폼
 
@@ -116,22 +136,8 @@
 
 ---
 
-### 🛒 [On & Home](https://github.com/Blanc617/OnAndHome) — 전자제품 E-Commerce 플랫폼
-![](https://img.shields.io/badge/2025.11_~_2025.12-aaa?style=flat) ![](https://img.shields.io/badge/5인_팀-aaa?style=flat) ![](https://img.shields.io/badge/팀장_/_풀스택_개발-aaa?style=flat) [![GitHub](https://img.shields.io/badge/View_Repo-0D1117?style=flat&logo=github&logoColor=white)](https://github.com/Blanc617/OnAndHome)
-
-> 구매자와 운영자를 위한 이중 인터페이스 커머스 플랫폼
-
-- React + Spring Boot 기반 쇼핑몰/관리자 백오피스를 **분리 구축**해 사용자·운영자 흐름 독립 관리
-- JWT 인증 + OAuth 로그인 연동으로 세션 의존도를 줄이고 **토큰 갱신 구조**로 보안 강화
-- 장바구니·주문·결제·재고 차감 흐름을 **JPA 트랜잭션** 기반으로 구현해 데이터 정합성 확보
-- **WebSocket 기반 실시간 알림** + DB 알림 이력으로 주문·Q&A·리뷰 이벤트 즉시 전달
-
-**Stack:** `FastAPI` `Spring Boot` `Java` `React` `MySQL` `Tailwind CSS`
-
----
-
 ### 🐶 댕슐랭 — 강아지 품종 분류 및 레시피 AI 서비스
-![](https://img.shields.io/badge/2026.03-aaa?style=flat) ![](https://img.shields.io/badge/5인_팀-aaa?style=flat) ![](https://img.shields.io/badge/팀장_/_AI·백엔드-aaa?style=flat)
+![](https://img.shields.io/badge/AI-412991?style=flat) ![](https://img.shields.io/badge/2026.03-aaa?style=flat) ![](https://img.shields.io/badge/5인_팀-aaa?style=flat) ![](https://img.shields.io/badge/팀장-6B7280?style=flat)
 
 > 사진 한 장으로 견종을 분석하고 맞춤 식단 레시피를 추천하는 AI 앱
 
@@ -141,6 +147,20 @@
 - GPT-4o-mini를 **RAG** 방식으로 활용하고 Lazy Loading·SSE 캐싱으로 응답 대기시간 및 API 비용 절감
 
 **Stack:** `FastAPI` `Python` `React Native (Expo)` `TypeScript` `Supabase (PostgreSQL)` `GPT-4o-mini`
+
+---
+
+### 🛒 [On & Home](https://github.com/Blanc617/OnAndHome) — 전자제품 E-Commerce 플랫폼
+![](https://img.shields.io/badge/FULLSTACK-2563EB?style=flat) ![](https://img.shields.io/badge/2025.11_~_2025.12-aaa?style=flat) ![](https://img.shields.io/badge/5인_팀-aaa?style=flat) ![](https://img.shields.io/badge/팀장-6B7280?style=flat) [![GitHub](https://img.shields.io/badge/View_Repo-0D1117?style=flat&logo=github&logoColor=white)](https://github.com/Blanc617/OnAndHome)
+
+> 구매자와 운영자를 위한 이중 인터페이스 커머스 플랫폼
+
+- React + Spring Boot 기반 쇼핑몰/관리자 백오피스를 **분리 구축**해 사용자·운영자 흐름 독립 관리
+- JWT 인증 + OAuth 로그인 연동으로 세션 의존도를 줄이고 **토큰 갱신 구조**로 보안 강화
+- 장바구니·주문·결제·재고 차감 흐름을 **JPA 트랜잭션** 기반으로 구현해 데이터 정합성 확보
+- **WebSocket 기반 실시간 알림** + DB 알림 이력으로 주문·Q&A·리뷰 이벤트 즉시 전달
+
+**Stack:** `FastAPI` `Spring Boot` `Java` `React` `MySQL` `Tailwind CSS`
 
 ---
 
@@ -204,3 +224,4 @@
 <div align="center">
   <i>"실제로 작동하는 것을 만드는 것이 가장 좋은 공부다"</i>
 </div>
+
